@@ -1,0 +1,18 @@
+import type { MetadataRoute } from "next";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "") || undefined;
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  if (!siteUrl) {
+    return [];
+  }
+
+  return [
+    {
+      url: siteUrl,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+  ];
+}
