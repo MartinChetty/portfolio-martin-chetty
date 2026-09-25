@@ -2,6 +2,15 @@ import type { VerifiedBadge } from "@/content/types";
 
 export const verifiedBadges: readonly VerifiedBadge[] = [
   {
+    id: "data-science-cisco-generative-ai-blue-belt-2025",
+    name: "Data Science @Cisco Generative AI Blue Belt 2025",
+    issuer: "Cisco",
+    imageSrc: "/images/badges/data-science-cisco-generative-ai-blue-belt-2025.jpeg",
+    imageAlt: "Data Science @Cisco Generative AI Blue Belt 2025 badge",
+    credentialUrl:
+      "https://www.credly.com/badges/aa7e03fa-00c8-4ff3-a60a-b0d482fcced3/linked_in_profile",
+  },
+  {
     id: "cisco-qualified-2025-gen-ai-green-belt",
     name: "Cisco Qualified 2025 GEN AI Green Belt",
     issuer: "Cisco",

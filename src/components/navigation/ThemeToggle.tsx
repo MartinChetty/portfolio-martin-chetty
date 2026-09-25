@@ -66,11 +66,15 @@ export function ThemeToggle() {
     <Button
       aria-label={label}
       aria-pressed={isDark}
-      className="size-10 min-h-0 p-0"
+      className="size-11 min-h-0 p-0 xl:size-10"
       onClick={toggleTheme}
       variant="ghost"
     >
-      {isDark ? <Sun aria-hidden="true" size={18} /> : <Moon aria-hidden="true" size={18} />}
+      {isDark ? (
+        <Sun aria-hidden="true" className="size-5 xl:size-[18px]" size={18} />
+      ) : (
+        <Moon aria-hidden="true" className="size-5 xl:size-[18px]" size={18} />
+      )}
     </Button>
   );
 }

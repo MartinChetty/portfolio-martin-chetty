@@ -232,7 +232,7 @@ function ProjectPanel({
   const featured = index === 0;
   const visualKind = visualKinds[project.id];
   const summary = project.highlights[0];
-  const detailsId = featured ? `${project.id}-details` : "selected-project-details";
+  const detailsId = `${project.id}-details`;
   const detailsTriggerId = `${project.id}-details-trigger`;
 
   return (
@@ -336,7 +336,23 @@ function ProjectPanel({
                 </motion.div>
               ) : null}
             </AnimatePresence>
-          ) : null}
+          ) : (
+            <AnimatePresence initial={false}>
+              {detailsOpen ? (
+                <motion.div
+                  animate={{ height: "auto", opacity: 1 }}
+                  aria-labelledby={detailsTriggerId}
+                  className="overflow-hidden lg:hidden"
+                  exit={{ height: 0, opacity: 0 }}
+                  id={detailsId}
+                  initial={reduceMotion ? false : { height: 0, opacity: 0 }}
+                  transition={{ duration: reduceMotion ? 0 : 0.24, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <ProjectDetailsContent project={project} />
+                </motion.div>
+              ) : null}
+            </AnimatePresence>
+          )}
         </div>
       </Card>
     </motion.article>
@@ -515,7 +531,7 @@ export function Projects() {
             <motion.div
               animate={{ height: "auto", opacity: 1 }}
               aria-labelledby="selected-project-details-title"
-              className="overflow-hidden"
+              className="hidden overflow-hidden lg:block"
               exit={{ height: 0, opacity: 0 }}
               initial={reduceMotion ? false : { height: 0, opacity: 0 }}
               key={selectedSecondaryProject.id}
