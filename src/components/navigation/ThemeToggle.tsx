@@ -66,14 +66,14 @@ export function ThemeToggle() {
     <Button
       aria-label={label}
       aria-pressed={isDark}
-      className="size-11 min-h-0 p-0 xl:size-10"
+      className="size-[46px] min-h-0 p-0 xl:size-10"
       onClick={toggleTheme}
       variant="ghost"
     >
       {isDark ? (
-        <Sun aria-hidden="true" className="size-5 xl:size-[18px]" size={18} />
+        <Sun aria-hidden="true" className="h-5 w-5 shrink-0 xl:h-[18px] xl:w-[18px]" strokeWidth={2.25} />
       ) : (
-        <Moon aria-hidden="true" className="size-5 xl:size-[18px]" size={18} />
+        <Moon aria-hidden="true" className="h-5 w-5 shrink-0 xl:h-[18px] xl:w-[18px]" strokeWidth={2.25} />
       )}
     </Button>
   );
