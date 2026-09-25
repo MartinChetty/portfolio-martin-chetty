@@ -67,7 +67,7 @@ export function Contact() {
 
           <Card
             aria-labelledby="contact-details-title"
-            className="rounded-none p-0 shadow-[0_20px_70px_color-mix(in_srgb,#000_12%,transparent)]"
+            className="min-w-0 rounded-none p-0 shadow-[0_20px_70px_color-mix(in_srgb,#000_12%,transparent)]"
             variant="outlined"
           >
             <div className="flex items-center justify-between border-b border-[var(--border)] px-5 py-4 sm:px-6">
