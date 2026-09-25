@@ -136,7 +136,7 @@ export function Navigation() {
                 <span className="block text-xs leading-none font-semibold tracking-[-0.02em] sm:text-sm">
                   Martin Chetty
                 </span>
-                <span className="mt-1 hidden font-mono text-[0.58rem] tracking-[0.12em] text-[var(--text-muted)] uppercase sm:block">
+                <span className="mt-1 block font-mono text-[0.58rem] tracking-[0.12em] text-[var(--text-muted)] uppercase">
                   AI · Automation · Infra
                 </span>
               </span>
