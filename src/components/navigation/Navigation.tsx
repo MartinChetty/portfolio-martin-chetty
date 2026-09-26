@@ -63,8 +63,10 @@ export function Navigation() {
     }
 
     const dialog = mobileDialogRef.current;
-    const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
-    const firstFocusable = dialog?.querySelector<HTMLElement>(focusableSelector);
+    const focusableSelector =
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const firstFocusable =
+      dialog?.querySelector<HTMLElement>(focusableSelector);
 
     firstFocusable?.focus();
 
@@ -80,16 +82,24 @@ export function Navigation() {
         return;
       }
 
-      const focusableElements = Array.from(dialog.querySelectorAll<HTMLElement>(focusableSelector));
+      const focusableElements = Array.from(
+        dialog.querySelectorAll<HTMLElement>(focusableSelector),
+      );
       const firstElement = focusableElements[0];
       const lastElement = focusableElements.at(-1);
 
       if (!firstElement || !lastElement) {
         event.preventDefault();
-      } else if (event.shiftKey && document.activeElement === firstElement) {
+      } else if (
+        event.shiftKey &&
+        document.activeElement === firstElement
+      ) {
         event.preventDefault();
         lastElement.focus();
-      } else if (!event.shiftKey && document.activeElement === lastElement) {
+      } else if (
+        !event.shiftKey &&
+        document.activeElement === lastElement
+      ) {
         event.preventDefault();
         firstElement.focus();
       }
@@ -107,42 +117,48 @@ export function Navigation() {
   return (
     <>
       <ScrollProgress />
+
       <a
         className="sr-only fixed top-4 left-4 z-[70] rounded-lg bg-[var(--brand)] px-4 py-2 font-medium text-[var(--on-brand)] focus:not-sr-only"
         href="#main-content"
       >
         Skip to main content
       </a>
+
       <header
         className="sticky top-0 z-50 px-3 transition-[padding] duration-300 sm:px-5"
         data-scrolled={isScrolled}
       >
         <Container className="py-3" size="wide">
-          <div className="glass-panel flex min-h-14 items-center justify-between gap-3 rounded-2xl px-2 sm:px-3">
+          <div className="glass-panel flex min-h-14 items-center justify-between gap-2 rounded-2xl px-2 sm:gap-3 sm:px-3">
             <a
               aria-label="Martin Chetty, back to top"
-              className="group inline-flex shrink-0 items-center gap-2 rounded-xl px-2 py-1.5 text-[var(--text)] focus-visible:ring-2 focus-visible:ring-[var(--focus)] focus-visible:outline-none"
+              className="group flex min-w-0 shrink items-center gap-2 rounded-xl px-1.5 py-1.5 text-[var(--text)] focus-visible:ring-2 focus-visible:ring-[var(--focus)] focus-visible:outline-none sm:px-2"
               href="#main-content"
               onClick={closeMenu}
             >
-              <span className="relative inline-flex size-8 items-center justify-center rounded-lg border border-[color-mix(in_srgb,var(--brand)_48%,transparent)] bg-[var(--brand-subtle)] font-mono text-xs font-semibold text-[var(--brand-strong)]">
+              <span className="relative inline-flex size-8 shrink-0 items-center justify-center rounded-lg border border-[color-mix(in_srgb,var(--brand)_48%,transparent)] bg-[var(--brand-subtle)] font-mono text-xs font-semibold text-[var(--brand-strong)]">
                 MC
                 <span
                   aria-hidden="true"
                   className="absolute -top-1 -right-1 size-2 rounded-full bg-[var(--brand)] shadow-[0_0_16px_var(--brand)]"
                 />
               </span>
-              <span className="block text-left">
-                <span className="block text-xs leading-none font-semibold tracking-[-0.02em] sm:text-sm">
+
+              <span className="min-w-0 text-left">
+                <span className="block truncate text-xs leading-none font-semibold tracking-[-0.02em] sm:text-sm">
                   Martin Chetty
                 </span>
-                <span className="mt-1 block font-mono text-[0.58rem] tracking-[0.12em] text-[var(--text-muted)] uppercase">
+                <span className="mt-1 block truncate font-mono text-[0.55rem] tracking-[0.1em] text-[var(--text-muted)] uppercase sm:text-[0.58rem] sm:tracking-[0.12em]">
                   AI · Automation · Infra
                 </span>
               </span>
             </a>
 
-            <nav aria-label="Primary navigation" className="hidden items-center gap-1 xl:flex">
+            <nav
+              aria-label="Primary navigation"
+              className="hidden items-center gap-1 xl:flex"
+            >
               {navigationItems.map((item) => {
                 const sectionId = item.href.slice(1);
                 const isActive = activeSection === sectionId;
@@ -169,7 +185,7 @@ export function Navigation() {
               })}
             </nav>
 
-            <div className="flex items-center gap-0.5">
+            <div className="flex shrink-0 items-center gap-0.5">
               <div className="hidden items-center gap-0.5 border-r border-[var(--border)] pr-2 xl:flex">
                 {github ? (
                   <a
@@ -182,6 +198,7 @@ export function Navigation() {
                     <FaGithub aria-hidden="true" size={16} />
                   </a>
                 ) : null}
+
                 {linkedin ? (
                   <a
                     aria-label="LinkedIn profile (opens in a new tab)"
@@ -193,6 +210,7 @@ export function Navigation() {
                     <FaLinkedin aria-hidden="true" size={16} />
                   </a>
                 ) : null}
+
                 <a
                   aria-label="Download resume PDF"
                   className={iconLinkClassName}
@@ -202,12 +220,18 @@ export function Navigation() {
                   <FileText aria-hidden="true" size={16} />
                 </a>
               </div>
+
               <ThemeToggle />
+
               <button
                 aria-controls="mobile-navigation"
                 aria-expanded={isMenuOpen}
-                aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-                className="inline-flex size-9 items-center justify-center rounded-lg text-[var(--text)] transition-colors hover:bg-[var(--surface-subtle)] focus-visible:ring-2 focus-visible:ring-[var(--focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--canvas)] focus-visible:outline-none xl:hidden"
+                aria-label={
+                  isMenuOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+                }
+                className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg text-[var(--text)] transition-colors hover:bg-[var(--surface-subtle)] focus-visible:ring-2 focus-visible:ring-[var(--focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--canvas)] focus-visible:outline-none xl:hidden"
                 onClick={() => setIsMenuOpen((open) => !open)}
                 ref={menuButtonRef}
                 type="button"
@@ -235,25 +259,30 @@ export function Navigation() {
             initial={reduceMotion ? false : { opacity: 0 }}
             ref={mobileDialogRef}
             role="dialog"
-            transition={{ duration: reduceMotion ? 0 : 0.2, ease: "easeOut" }}
+            transition={{
+              duration: reduceMotion ? 0 : 0.2,
+              ease: "easeOut",
+            }}
           >
             <Container size="wide">
-              <div className="glass-panel relative max-h-[calc(100svh-6rem)] overflow-y-auto rounded-3xl p-4 sm:p-6">
+              <div className="glass-panel relative max-h-[calc(100svh-6rem)] overflow-hidden rounded-3xl p-4 sm:p-6">
                 <Button
                   aria-label="Close navigation menu"
-                  className="absolute top-4 right-4 size-9 min-h-0 p-0"
+                  className="absolute top-4 right-4 z-10 size-13 min-h-0 shrink-0 p-0"
                   onClick={() => {
                     setIsMenuOpen(false);
                     menuButtonRef.current?.focus();
                   }}
                   variant="ghost"
                 >
-                  <X aria-hidden="true" size={19} />
+                  <X aria-hidden="true" size={25} />
                 </Button>
-                <div className="pt-10">
+
+                <div className="max-h-[calc(100svh-8rem)] overflow-y-auto pr-1 pt-10 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <p className="mb-4 px-4 font-mono text-[0.65rem] tracking-[0.18em] text-[var(--brand)] uppercase">
                     Navigate the system
                   </p>
+
                   <nav aria-label="Mobile navigation">
                     <ul className="grid gap-1">
                       {navigationItems.map((item, index) => {
@@ -263,7 +292,11 @@ export function Navigation() {
                         return (
                           <motion.li
                             animate={{ opacity: 1, x: 0 }}
-                            initial={reduceMotion ? false : { opacity: 0, x: -12 }}
+                            initial={
+                              reduceMotion
+                                ? false
+                                : { opacity: 0, x: -12 }
+                            }
                             key={item.href}
                             transition={{
                               delay: reduceMotion ? 0 : 0.04 * index,
@@ -272,8 +305,13 @@ export function Navigation() {
                             }}
                           >
                             <a
-                              aria-current={isActive ? "location" : undefined}
-                              className={navigationLinkClassName(isActive, true)}
+                              aria-current={
+                                isActive ? "location" : undefined
+                              }
+                              className={navigationLinkClassName(
+                                isActive,
+                                true,
+                              )}
                               href={item.href}
                               onClick={closeMenu}
                             >
@@ -284,13 +322,17 @@ export function Navigation() {
                                   layoutId="mobile-active-navigation"
                                 />
                               ) : null}
-                              <span className="relative z-10">{item.label}</span>
+
+                              <span className="relative z-10">
+                                {item.label}
+                              </span>
                             </a>
                           </motion.li>
                         );
                       })}
                     </ul>
                   </nav>
+
                   <div className="mt-6 flex items-center gap-1 border-t border-[var(--border)] pt-5">
                     {github ? (
                       <a
@@ -303,6 +345,7 @@ export function Navigation() {
                         <FaGithub aria-hidden="true" size={17} />
                       </a>
                     ) : null}
+
                     {linkedin ? (
                       <a
                         aria-label="LinkedIn profile (opens in a new tab)"
@@ -314,6 +357,7 @@ export function Navigation() {
                         <FaLinkedin aria-hidden="true" size={17} />
                       </a>
                     ) : null}
+
                     <a
                       aria-label="Download resume PDF"
                       className={iconLinkClassName}
