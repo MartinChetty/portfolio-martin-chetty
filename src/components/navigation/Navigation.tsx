@@ -149,7 +149,7 @@ export function Navigation() {
                 <span className="block truncate text-xs leading-none font-semibold tracking-[-0.02em] sm:text-sm">
                   Martin Chetty
                 </span>
-                <span className="mt-1 block truncate font-mono text-[0.55rem] tracking-[0.1em] text-[var(--text-muted)] uppercase sm:text-[0.58rem] sm:tracking-[0.12em]">
+                <span className="mt-1 block whitespace-nowrap font-mono text-[0.52rem] tracking-[0.08em] text-[var(--text-muted)] uppercase sm:text-[0.58rem] sm:tracking-[0.12em]">
                   AI · Automation · Infra
                 </span>
               </span>
