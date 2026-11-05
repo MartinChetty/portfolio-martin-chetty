@@ -31,6 +31,7 @@ type ProjectVisualKind = "document" | "agent" | "travel" | "email";
 
 const visualKinds: Record<string, ProjectVisualKind> = {
   "ai-document-qa-system": "document",
+  "cisco-knowledge-based-agentic-ai-assistant": "document",
   "agentic-chatbot": "agent",
   "ai-india-travel-planner": "travel",
   "ai-email-agent": "email",
@@ -230,6 +231,7 @@ function ProjectPanel({
   reduceMotion: boolean | null;
 }) {
   const featured = index === 0;
+  const pairedLayout = (projects.length - 1) % 2 === 0;
   const visualKind = visualKinds[project.id];
   const summary = project.highlights[0];
   const detailsId = `${project.id}-details`;
@@ -238,7 +240,7 @@ function ProjectPanel({
   return (
     <motion.article
       aria-labelledby={`${project.id}-title`}
-      className={featured ? "lg:col-span-12" : "lg:col-span-4"}
+      className={featured ? "lg:col-span-12" : pairedLayout ? "lg:col-span-6" : "lg:col-span-4"}
       initial={reduceMotion ? false : { opacity: 0, y: 18 }}
       transition={{
         delay: reduceMotion ? 0 : Math.min(index * 0.06, 0.18),
@@ -270,7 +272,7 @@ function ProjectPanel({
                 {featured ? "Featured system" : `Project 0${index + 1}`}
               </Badge>
               <span className="font-mono text-[0.6rem] tracking-[0.14em] text-[var(--text-muted)] uppercase">
-                0{index + 1} / 04
+                {String(index + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
               </span>
             </div>
             <h3

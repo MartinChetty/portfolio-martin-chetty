@@ -47,6 +47,42 @@ export const projects: readonly Project[] = [
     },
   },
   {
+    id: "cisco-knowledge-based-agentic-ai-assistant",
+    name: "Cisco Knowledge-Based Agentic AI Assistant",
+    description:
+      "A knowledge-based Agentic AI assistant for Cisco product discovery, developed as an individually assigned project working directly with my manager at Cisco.",
+    technologies: ["Python", "LangChain", "LangGraph", "Retrieval-Augmented Generation (RAG)", "ChromaDB", "Streamlit"],
+    highlights: [
+      "Developed a knowledge-based Agentic AI assistant for Cisco product discovery as an individually assigned project, working directly with my manager, using Python, LangChain, LangGraph and Retrieval-Augmented Generation (RAG).",
+      "Worked on the RAG and retrieval workflow, using embeddings and ChromaDB semantic search to ground responses in Cisco product knowledge.",
+      "Developed and worked on intent classification and product detection to direct natural-language queries to relevant product information.",
+      "Contributed to contextual response generation and UI response formatting.",
+      "Debugged and tested retrieval workflows, and investigated vector database integration and dependency challenges; a FAISS integration remained blocked by dependency and artifact-approval requirements.",
+    ],
+    details: {
+      problem:
+        "Help users discover Cisco products, look up technical features and compare options through natural-language queries grounded in product knowledge.",
+      architecture: [
+        "Natural-language query",
+        "Intent and product detection",
+        "Retrieval from product knowledge (embeddings, ChromaDB)",
+        "LangGraph multi-step workflow",
+        "Context-grounded response",
+      ],
+      capabilities: [
+        "Product discovery and feature lookup",
+        "Product comparisons",
+        "Intent and product detection",
+        "Context-grounded answers",
+      ],
+      engineeringFocus: [
+        "Retrieval relevance",
+        "Workflow debugging and testing",
+        "Dependency and integration troubleshooting",
+      ],
+    },
+  },
+  {
     id: "agentic-chatbot",
     name: "Agentic Chatbot",
     description:
