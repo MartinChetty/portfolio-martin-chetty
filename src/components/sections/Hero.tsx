@@ -137,7 +137,7 @@ export function Hero() {
               {profile.name}
             </p>
             <p className="mt-3 text-base font-medium text-[var(--text)] sm:text-lg">
-              {profile.role} <span className="text-[var(--brand)]">@</span> {profile.organization}
+              {profile.role} <span className="text-[var(--brand)]">/</span> ex-{profile.organization}
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-7 text-[var(--text-muted)] sm:mt-8 sm:text-lg sm:leading-8">
-            Software automation, AI engineering, network automation, and infrastructure.
+            {profile.summary}
           </p>
 
           <div className="mt-7 flex flex-wrap gap-2 sm:mt-8">
@@ -254,7 +254,7 @@ export function Hero() {
 
             <div className="mt-4 flex items-center justify-between border-t border-[var(--border)] pt-3 font-mono text-[0.58rem] tracking-[0.15em] text-[var(--text-muted)] uppercase">
               <span>Software automation</span>
-              <span className="text-[var(--brand)]">Cisco Systems</span>
+              <span className="text-[var(--brand)]">Cisco Systems · 2025–2026</span>
             </div>
           </div>
         </motion.div>

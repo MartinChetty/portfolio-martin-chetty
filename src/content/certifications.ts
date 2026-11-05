@@ -11,12 +11,17 @@ export const certifications: readonly Certification[] = [
       "https://www.credly.com/badges/091fcb28-fcd2-4ad4-81e6-d3eb958d3724/linked_in_profile",
   },
   {
+    id: "ccna-automation",
+    name: "Cisco Certified Network Associate Automation (CCNA Automation)",
+    provider: "Cisco",
+    category: "Networking",
+    featured: true,
+  },
+  {
     id: "cisco-ai-technical-practitioner",
-    name: "Cisco AI Technical Practitioner (AITECH)",
+    name: "Cisco Certified AI Technical Practitioner",
     provider: "Cisco",
     category: "AI",
-    credentialUrl:
-      "https://www.credly.com/badges/61b31f25-0b78-4df4-b9d3-8684d3c1c0ac/linked_in_profile",
   },
   {
     id: "agentic-ai-bootcamp",
@@ -35,10 +40,8 @@ export const certifications: readonly Certification[] = [
   },
   {
     id: "software-automation-testing-program",
-    name: "Software Automation Testing Program",
+    name: "Automation Testing",
     provider: "Simplilearn",
-    issuedBy: ["Cisco"],
-    note: "Cisco Sponsored",
     category: "Software Automation / Testing",
     credentialUrl: "https://drive.google.com/file/d/1Kxy8KMyBQi8a3uasxnh7XiM778ob-s3t/view?pli=1",
   },

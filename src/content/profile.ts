@@ -2,12 +2,12 @@ import type { Profile } from "@/content/types";
 
 export const profile: Profile = {
   name: "Martin Chetty",
-  role: "Software Automation Trainee",
+  role: "Software Automation Engineer",
   organization: "Cisco Systems",
   location: "Bengaluru, Karnataka, India",
   email: "martinchetty2002@gmail.com",
   phone: "+91 9347967058",
   summary:
-    "Software Automation Trainee at Cisco Systems with a strong foundation in Python, Java, networking, cloud computing, and generative AI. Experienced in developing AI-powered applications using LangChain, LangGraph, Agentic AI, and Retrieval-Augmented Generation (RAG), with hands-on exposure to data center infrastructure, automation workflows, and enterprise networking environments. CCNA-certified professional passionate about software engineering, DevOps, network automation, and AI-driven solutions.",
-  specialties: ["Java", "Python", "CCNA", "Generative AI", "Network Automation", "Cloud", "DevOps"],
+    "Software Automation Engineer with experience from a fixed-term apprenticeship at Cisco Systems (Oct 2025 – Oct 2026), covering network and firewall functionality testing, Python-based test automation, IP address management (IPAM) workflows, and data center infrastructure. Builds AI applications with LangChain, LangGraph, and Retrieval-Augmented Generation (RAG). CCNA and CCNA Automation certified, with interests in software engineering, test automation, network automation, and AI-driven solutions.",
+  specialties: ["Java", "Python", "CCNA", "Generative AI", "Network Automation"],
 };

@@ -1,50 +1,48 @@
 MARTIN CHETTY
-Software Automation Trainee at Cisco | Java | Python | CCNA Certified | Generative AI | Network Automation |
-Cloud & DevOps Enthusiast
+Software Automation Engineer (ex-Cisco, apprenticeship) | Java | Python | CCNA Certified | Generative AI | Network Automation
 martinchetty2002@gmail.com +91 9347967058 Bengaluru, Karnataka, India martin-chetty-325412269
 MartinChetty
 PROFESSIONAL SUMMARY
-Software Automation Trainee at Cisco Systems with a strong foundation in Python, Java, Networking, Cloud
-Computing, and Generative AI. Experienced in developing AI-powered applications using LangChain, LangGraph,
-Agentic AI, and Retrieval-Augmented Generation (RAG), with hands-on exposure to data center infrastructure,
-automation workflows, and enterprise networking environments. CCNA-certified professional passionate about
-Software Engineering, DevOps, Network Automation, and AI-driven solutions.
+Software Automation Engineer with experience from a fixed-term apprenticeship at Cisco Systems (Oct 2025 –
+Oct 2026), covering network and firewall functionality testing, Python-based test automation, IPAM workflows,
+and data center infrastructure. Builds AI applications with LangChain, LangGraph, and Retrieval-Augmented
+Generation (RAG). CCNA and CCNA Automation certified, with interests in software engineering, test automation,
+network automation, and AI-driven solutions.
 WORK EXPERIENCE
 Cisco Systems
-Software Automation Trainee Oct 2025 - Present
-• Working with the Firepower Developer (SBGE InfraOps) team to support infrastructure operations,
-automation initiatives, and enterprise-scale data center environments.
-• Contributing to automation solutions for IP address management and operational workflows, reducing
-manual effort and improving process efficiency.
-• Gaining hands-on exposure to data center infrastructure, networking components, and operational best
-practices through collaboration with infrastructure and operations teams.
-• Utilizing Python, LangChain, LangGraph, and Retrieval-Augmented Generation (RAG) concepts to develop
-AI-driven automation solutions and proof-of-concept applications.
-• Built proof-of-concept AI applications including an AI Email Agent, Agentic Chatbot, AI Travel Planner, and AI
-Document Question-Answering System to strengthen practical knowledge of agentic AI architectures.
-• Collaborating with engineers on AI-driven initiatives and data center operational use cases while applying
-software engineering and automation principles.
-• Completed Cisco-sponsored technical training programs covering software automation, testing, cloud
-technologies, networking fundamentals, and enterprise software development.
+Software Automation Engineer (Fixed-term apprenticeship) Oct 2025 - 21 Oct 2026
+• Fixed-term apprenticeship with the Firepower Developer (SBGE InfraOps) team, working on data center firewall
+environments, network functionality testing, and infrastructure automation.
+• Worked with Firepower Threat Defense (FTD) appliances managed through Firepower Management Center (FMC),
+including device management, security policy configuration, and deployment validation.
+• Performed DHCP, NAT, Access Control Policy (ACP), and TFTP functionality testing, and developed and modified
+Python-based automated test scripts using Cisco's internal automation framework.
+• Investigated failed test runs by reviewing execution logs and checking configurations and connectivity, and
+supported retesting and regression validation.
+• Worked on IP address management (IPAM) workflows and data center infrastructure checks aimed at reducing
+manual effort.
+• Developed and contributed to a team-built, knowledge-based Agentic AI assistant for Cisco product discovery
+using Python, LangChain, LangGraph, RAG, and ChromaDB.
+• Completed Cisco-sponsored technical training covering software automation, testing, networking
+fundamentals, cloud technologies, and enterprise software development.
 CodeAlpha
 Java Programming Intern Jun 2025 - Sep 2025
 • Developed a Student Grade Tracker GUI application using Java to manage and monitor student academic
 performance.
-• Applied Object-Oriented Programming (OOP), exception handling, and file management concepts to build a
-structured and user-friendly solution.
+• Applied object-oriented programming (OOP) and input validation with exception handling, and calculated
+class average, highest, and lowest scores in a Java Swing interface.
 • Enhanced problem-solving, debugging, and software development skills through project-based
 implementation and testing.
 SlashMark
 Machine Learning Intern Feb 2024 - May 2024
-• Developed machine learning models using Python and applied data preprocessing techniques to improve
-prediction accuracy.
+• Developed machine learning models using Python and applied data preprocessing techniques.
 • Performed data analysis, feature engineering, and model evaluation using libraries such as Pandas and
 NumPy.
 • Built interactive visualizations and dashboards to communicate insights and support data-driven
 decision-making.
 PROJECTS
 AI Document Q&A System
-• Developed a production-style Retrieval-Augmented Generation (RAG) application using Python, LangChain,
+• Developed a document-based Retrieval-Augmented Generation (RAG) application using Python, LangChain,
 FAISS, and Groq LLMs.
 • Implemented multi-format document ingestion, vector-based retrieval, and semantic search to provide
 context-aware answers from uploaded documents.
@@ -61,27 +59,28 @@ AI India Travel Planner
 based on user preferences.
 • Developed an interactive Streamlit application with memory-enabled conversations and multi-agent
 workflow orchestration.
-AI Email Agent
-• Developed an AI-powered email assistant using Large Language Models (LLMs) to generate professional
-email responses.
-• Implemented prompt engineering and workflow automation for personalized email drafting and refinement.
-• Improved productivity by automating repetitive email composition and communication tasks.
+AI Email Agent (Prototype)
+• Built a prototype agent using LangChain's agent API and a local Llama 3.1 model through Ollama, with
+mocked read-email and send-email tools that do not access or send real emails.
+• Added human-in-the-loop approval: the agent pauses before any send action so the user can approve,
+reject or edit it in a Streamlit interface.
+• Used a LangGraph in-memory checkpointer so the agent resumes after each approval decision.
 SKILLS
 Programming Languages: Java, Python
 AI & Generative AI: LangChain, LangGraph, Agentic AI, Retrieval-Augmented Generation (RAG), Prompt
 Engineering, Large Language Models (LLMs), Vector Databases, FAISS
-Cloud & Platforms: AWS, Oracle Cloud Infrastructure (OCI)
 Networking & Infrastructure: CCNA, Computer Networks, Data Center Fundamentals
-Tools & Technologies: Git, GitHub, Jira, VS Code, Jupyter Notebook, Streamlit, OpenCV, Jenkins, GitHub Actions
+Tools & Technologies: Git, GitHub, Jira, VS Code, Jupyter Notebook, Streamlit
 Web & Databases: HTML, CSS, MySQL
 Core Computer Science: Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS, Operating
 Systems
 CERTIFICATIONS
 Cisco Certified Network Associate (CCNA)
-Cisco AI Technical Practitioner (AITECH)
+Cisco Certified Network Associate Automation (CCNA Automation)
+Cisco Certified AI Technical Practitioner
 Complete Agentic AI Bootcamp with LangGraph and LangChain – Udemy
 Generative AI with Large Language Models – Coursera (AWS & DeepLearning.AI)
-Software Automation Testing Program – Simplilearn (Cisco Sponsored)
+Automation Testing – Simplilearn
 Full Stack Web Development – Tap Academy
 Oracle Cloud Infrastructure (OCI) AI Foundations Associate
 EDUCATION

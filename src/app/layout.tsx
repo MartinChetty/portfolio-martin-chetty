@@ -22,17 +22,17 @@ const portfolioImagePath = "/images/data-center-automation-hero.png";
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title: {
-    default: "Martin Chetty | Software Automation Trainee",
+    default: "Martin Chetty | Software Automation Engineer",
     template: "%s | Martin Chetty",
   },
   description:
-    "Portfolio of Martin Chetty, a Software Automation Trainee at Cisco focused on Python, network automation, cloud, and generative AI.",
+    "Portfolio of Martin Chetty, a Software Automation Engineer with Cisco apprenticeship experience in Python test automation, network automation, and generative AI.",
   authors: [{ name: "Martin Chetty" }],
   openGraph: {
     type: "website",
-    title: "Martin Chetty | Software Automation Trainee",
+    title: "Martin Chetty | Software Automation Engineer",
     description:
-      "Portfolio of Martin Chetty, a Software Automation Trainee at Cisco focused on Python, network automation, cloud, and generative AI.",
+      "Portfolio of Martin Chetty, a Software Automation Engineer with Cisco apprenticeship experience in Python test automation, network automation, and generative AI.",
     siteName: "Martin Chetty Portfolio",
     locale: "en_IN",
     ...(siteUrl
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Martin Chetty | Software Automation Trainee",
+    title: "Martin Chetty | Software Automation Engineer",
     description:
-      "Portfolio of Martin Chetty, a Software Automation Trainee at Cisco focused on Python, network automation, cloud, and generative AI.",
+      "Portfolio of Martin Chetty, a Software Automation Engineer with Cisco apprenticeship experience in Python test automation, network automation, and generative AI.",
   },
   robots: {
     index: true,

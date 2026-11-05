@@ -17,6 +17,8 @@ export interface Experience {
   readonly role: string;
   readonly startDate: IsoYearMonth;
   readonly endDate: IsoYearMonth | "present";
+  /** e.g. "Fixed-term apprenticeship"; shown as a badge when set. */
+  readonly employmentType?: string;
   readonly highlights: readonly string[];
 }
 

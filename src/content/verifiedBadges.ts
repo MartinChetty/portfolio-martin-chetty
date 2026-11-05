@@ -12,19 +12,19 @@ export const verifiedBadges: readonly VerifiedBadge[] = [
   },
   {
     id: "cisco-qualified-2025-gen-ai-green-belt",
-    name: "Cisco Qualified 2025 GEN AI Green Belt",
+    name: "Data Science @Cisco Generative AI Green Belt 2025",
     issuer: "Cisco",
     imageSrc: "/images/badges/data-science-cisco-generative-ai-green-belt-2025.png",
-    imageAlt: "Cisco Qualified 2025 GEN AI Green Belt badge",
+    imageAlt: "Data Science @Cisco Generative AI Green Belt 2025 badge",
     credentialUrl:
       "https://www.credly.com/badges/ea42ef71-eb10-4094-99d8-bc1c5c7a1105/linked_in_profile",
   },
   {
     id: "cisco-qualified-2025-gai-collab-white-belt",
-    name: "Cisco Qualified 2025 GAI-Collab White Belt",
+    name: "Generative AI Collaboration White Belt 2025",
     issuer: "Cisco",
     imageSrc: "/images/badges/generative-ai-collaboration-white-belt-2025.png",
-    imageAlt: "Cisco Qualified 2025 GAI-Collab White Belt badge",
+    imageAlt: "Generative AI Collaboration White Belt 2025 badge",
     credentialUrl:
       "https://www.credly.com/badges/7dc2ba50-d087-4c15-95a1-2c40d10d9a01/linked_in_profile",
   },

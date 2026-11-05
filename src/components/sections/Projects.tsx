@@ -202,13 +202,13 @@ function ProjectVisual({
           </div>
         </div>
         <div className="grid grid-cols-3 items-center gap-2 font-mono text-[0.55rem] tracking-[0.12em] text-[var(--text-muted)] uppercase">
-          <span>Draft</span>
-          <span className="text-center text-[var(--brand)]">Refine</span>
-          <span className="text-right">Response</span>
+          <span>Request</span>
+          <span className="text-center text-[var(--brand)]">Approve</span>
+          <span className="text-right">Resume</span>
         </div>
         <div className="mt-3 flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--text-muted)]">
           <PencilLine className="shrink-0 text-[var(--brand)]" size={15} />
-          <span className="truncate">Professional email workflow</span>
+          <span className="truncate">Approval before send</span>
           <RefreshCw className="ml-auto shrink-0 text-[var(--text-muted)]" size={14} />
         </div>
       </div>

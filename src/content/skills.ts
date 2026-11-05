@@ -17,11 +17,6 @@ export const skillGroups: readonly SkillGroup[] = [
     ],
   },
   {
-    id: "cloud-and-platforms",
-    label: "Cloud & Platforms",
-    skills: ["AWS", "Oracle Cloud Infrastructure (OCI)"],
-  },
-  {
     id: "networking-and-infrastructure",
     label: "Networking & Infrastructure",
     skills: ["CCNA", "Computer Networks", "Data Center Fundamentals", "Network Automation"],
@@ -36,9 +31,6 @@ export const skillGroups: readonly SkillGroup[] = [
       "VS Code",
       "Jupyter Notebook",
       "Streamlit",
-      "OpenCV",
-      "Jenkins",
-      "GitHub Actions",
     ],
   },
   { id: "web-and-databases", label: "Web & Databases", skills: ["HTML", "CSS", "MySQL"] },

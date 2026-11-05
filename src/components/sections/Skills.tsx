@@ -2,7 +2,7 @@
 
 import type { ComponentType } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Braces, Cloud, Cpu, GitBranch, Network } from "lucide-react";
+import { Braces, Cpu, GitBranch, Network } from "lucide-react";
 
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -49,17 +49,9 @@ const capabilityDomains: readonly CapabilityDomain[] = [
     icon: Network,
   },
   {
-    id: "cloud",
-    label: "Cloud",
+    id: "tools",
+    label: "Tools",
     index: "04",
-    description: "Cloud platforms and environments",
-    groupIds: ["cloud-and-platforms"],
-    icon: Cloud,
-  },
-  {
-    id: "devops",
-    label: "DevOps / Tools",
-    index: "05",
     description: "Development workflow and tooling",
     groupIds: ["tools-and-technologies"],
     icon: GitBranch,
@@ -127,7 +119,7 @@ function DomainPanel({ domain }: { domain: CapabilityDomain }) {
       ? "sm:col-span-2 lg:col-span-7"
       : domain.id === "software"
         ? "sm:col-span-2 lg:col-span-5"
-        : "lg:col-span-4";
+        : "lg:col-span-6";
 
   return (
     <motion.article
@@ -222,7 +214,7 @@ export function Skills() {
             How I build.
           </SectionTitle>
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--text-muted)] sm:text-lg">
-            AI, software, infrastructure, networking, cloud, and development tooling connected as
+            AI, software, infrastructure, networking, and development tooling connected as
             one working stack.
           </p>
         </div>
@@ -232,7 +224,9 @@ export function Skills() {
           <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-6">
             <div className="flex w-full items-center gap-3 font-mono text-[0.6rem] tracking-[0.18em] text-[var(--text-muted)] uppercase">
               <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[var(--brand)]/50" />
-              <span className="text-[var(--brand)]">Capability map / 05 domains</span>
+              <span className="text-[var(--brand)]">
+                Capability map / {String(capabilityDomains.length).padStart(2, "0")} domains
+              </span>
               <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[var(--brand)]/50" />
             </div>
 

@@ -191,7 +191,7 @@ export function Certifications() {
                 Verified Cisco Badges
               </h3>
               <p className="mt-2 text-sm leading-7 text-[var(--text-muted)] sm:text-base">
-                External credentials verified through Credly.
+                Issued by Cisco and verifiable on Credly.
               </p>
             </div>
             <Badge variant="neutral">{verifiedBadges.length} verified badges</Badge>

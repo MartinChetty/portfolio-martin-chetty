@@ -134,6 +134,7 @@ export function Experience() {
                       >
                         {formatExperienceRange(experience)}
                       </time>
+                      {experience.employmentType ? <Badge>{experience.employmentType}</Badge> : null}
                       {isCurrent ? <Badge variant="brand">Current role</Badge> : null}
                     </div>
                   </div>
