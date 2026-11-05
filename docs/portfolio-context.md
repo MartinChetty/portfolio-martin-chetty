@@ -66,12 +66,6 @@ project, working directly with my manager, using Python, LangChain, LangGraph an
 product detection; contributed to contextual response generation and UI response formatting.
 • Debugged and tested retrieval workflows and investigated vector database integration and dependency
 challenges; a FAISS integration remained blocked by dependency and artifact-approval requirements.
-AI Email Agent (Prototype)
-• Built a prototype agent using LangChain's agent API and a local Llama 3.1 model through Ollama, with
-mocked read-email and send-email tools that do not access or send real emails.
-• Added human-in-the-loop approval: the agent pauses before any send action so the user can approve,
-reject or edit it in a Streamlit interface.
-• Used a LangGraph in-memory checkpointer so the agent resumes after each approval decision.
 SKILLS
 Programming Languages: Java, Python
 AI & Generative AI: LangChain, LangGraph, Agentic AI, Retrieval-Augmented Generation (RAG), Prompt

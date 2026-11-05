@@ -2,6 +2,42 @@ import type { Project } from "@/content/types";
 
 export const projects: readonly Project[] = [
   {
+    id: "cisco-knowledge-based-agentic-ai-assistant",
+    name: "Cisco Knowledge-Based Agentic AI Assistant",
+    description:
+      "A knowledge-based Agentic AI assistant for Cisco product discovery, developed as an individually assigned project working directly with my manager at Cisco.",
+    technologies: ["Python", "LangChain", "LangGraph", "Retrieval-Augmented Generation (RAG)", "ChromaDB", "Streamlit"],
+    highlights: [
+      "Developed a knowledge-based Agentic AI assistant for Cisco product discovery as an individually assigned project, working directly with my manager, using Python, LangChain, LangGraph and Retrieval-Augmented Generation (RAG).",
+      "Worked on the RAG and retrieval workflow, using embeddings and ChromaDB semantic search to ground responses in Cisco product knowledge.",
+      "Developed and worked on intent classification and product detection to direct natural-language queries to relevant product information.",
+      "Contributed to contextual response generation and UI response formatting.",
+      "Debugged and tested retrieval workflows, and investigated vector database integration and dependency challenges; a FAISS integration remained blocked by dependency and artifact-approval requirements.",
+    ],
+    details: {
+      problem:
+        "Help users discover Cisco products, look up technical features and compare options through natural-language queries grounded in product knowledge.",
+      architecture: [
+        "Natural-language query",
+        "Intent and product detection",
+        "Retrieval from product knowledge (embeddings, ChromaDB)",
+        "LangGraph multi-step workflow",
+        "Context-grounded response",
+      ],
+      capabilities: [
+        "Product discovery and feature lookup",
+        "Product comparisons",
+        "Intent and product detection",
+        "Context-grounded answers",
+      ],
+      engineeringFocus: [
+        "Retrieval relevance",
+        "Workflow debugging and testing",
+        "Dependency and integration troubleshooting",
+      ],
+    },
+  },
+  {
     id: "ai-document-qa-system",
     name: "AI Document Q&A System",
     description:
@@ -43,42 +79,6 @@ export const projects: readonly Project[] = [
         "Modular ingestion",
         "Context management",
         "Practical RAG workflow design",
-      ],
-    },
-  },
-  {
-    id: "cisco-knowledge-based-agentic-ai-assistant",
-    name: "Cisco Knowledge-Based Agentic AI Assistant",
-    description:
-      "A knowledge-based Agentic AI assistant for Cisco product discovery, developed as an individually assigned project working directly with my manager at Cisco.",
-    technologies: ["Python", "LangChain", "LangGraph", "Retrieval-Augmented Generation (RAG)", "ChromaDB", "Streamlit"],
-    highlights: [
-      "Developed a knowledge-based Agentic AI assistant for Cisco product discovery as an individually assigned project, working directly with my manager, using Python, LangChain, LangGraph and Retrieval-Augmented Generation (RAG).",
-      "Worked on the RAG and retrieval workflow, using embeddings and ChromaDB semantic search to ground responses in Cisco product knowledge.",
-      "Developed and worked on intent classification and product detection to direct natural-language queries to relevant product information.",
-      "Contributed to contextual response generation and UI response formatting.",
-      "Debugged and tested retrieval workflows, and investigated vector database integration and dependency challenges; a FAISS integration remained blocked by dependency and artifact-approval requirements.",
-    ],
-    details: {
-      problem:
-        "Help users discover Cisco products, look up technical features and compare options through natural-language queries grounded in product knowledge.",
-      architecture: [
-        "Natural-language query",
-        "Intent and product detection",
-        "Retrieval from product knowledge (embeddings, ChromaDB)",
-        "LangGraph multi-step workflow",
-        "Context-grounded response",
-      ],
-      capabilities: [
-        "Product discovery and feature lookup",
-        "Product comparisons",
-        "Intent and product detection",
-        "Context-grounded answers",
-      ],
-      engineeringFocus: [
-        "Retrieval relevance",
-        "Workflow debugging and testing",
-        "Dependency and integration troubleshooting",
       ],
     },
   },
@@ -157,38 +157,6 @@ export const projects: readonly Project[] = [
         "Agentic workflow orchestration",
         "API integration",
         "Personalized context / memory",
-      ],
-    },
-  },
-  {
-    id: "ai-email-agent",
-    name: "AI Email Agent (Prototype)",
-    description:
-      "A prototype human-in-the-loop email agent. Its email tools are mocked, so it does not read or send real emails.",
-    technologies: ["Python", "LangChain", "LangGraph", "Ollama (Llama 3.1)", "Streamlit"],
-    highlights: [
-      "Built a prototype agent using LangChain's agent API and a local Llama 3.1 model through Ollama, with mocked read-email and send-email tools that do not access or send real emails.",
-      "Added human-in-the-loop approval: the agent pauses before any send action so the user can approve, reject or edit it in a Streamlit interface.",
-      "Used a LangGraph in-memory checkpointer so the agent resumes after each approval decision.",
-    ],
-    details: {
-      problem: "Explore how an AI agent can be kept under human control before it takes an action such as sending an email.",
-      architecture: [
-        "User request",
-        "LangChain agent (Llama 3.1 via Ollama)",
-        "Approval interrupt: approve, reject or edit",
-        "Mocked email tool (no real email)",
-      ],
-      capabilities: [
-        "Human-in-the-loop approval",
-        "Approve, reject or edit actions",
-        "Agent resume after each decision",
-        "Mocked email tools (prototype only)",
-      ],
-      engineeringFocus: [
-        "Agent interrupt and resume",
-        "Human oversight of agent actions",
-        "Local LLM integration",
       ],
     },
   },
